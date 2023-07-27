@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<!-- tag table digunakan untuk membuat tabel
+tag tabel memiliki beberapa tag
+tr untuk membuat row/baris (row)
+th untuk membuat kolom header (header)
+td untuk membuat kolom isi table
+caption untuk keterangan table
+thead untuk grup header table
+tbody untuk grup isi table
+tfoot untuk grup isi footer-->
+<body>
+    <h1>Latihan Table</h1>
+    <table style="border: 1px solid black;">
+        <colgroup>
+            <col span="2" style="background-color: yellow;">
+            <col style="background-color: aqua;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nama Depan</th>
+                <th>Nama Belakang</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Muhammad</td>
+                <td>Yasir</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Nasywa</td>
+                <td>Fauziyyah</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Total</td>
+                <td>188</td>
+            </tr>
+        </tfoot>
+    </table>
+            <br><br><br>
+    <table style="border: 1px solid black;">
+        <colgroup>
+            <col span="2" style="background-color: yellow;">
+            <col style="background-color: aqua;">
+        </colgroup>
+    <thead>
+        <tr>
+            <th colspan="2">Nama </th>
+            <th>Nilai</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Muhammad</td>
+            <td>Yasir</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>Nasywa</td>
+            <td>Fauziyyah</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td rowspan="2">Total</td>
+            <td>Total</td>
+            <td>188</td>
+        </tr>
+        <tr>
+            <td>Rata rata</td>
+            <td>85</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
